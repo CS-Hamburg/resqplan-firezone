@@ -25765,7 +25765,8 @@ _.d=a
 _.e=b
 _.f=c
 _.r=d},
-fj:function fj(a){this.a=a},
+fj:function fj(a,b){this.a=a
+this.b=b},
 auk(a){var s=J.hY(t.j.a(a.h(0,"points")),new A.a1V(),t.IQ),r=A.a3(s,s.$ti.i("aj.E"))
 return new A.ew(a.h(0,"id"),a.h(0,"name"),r,a.h(0,"color"),A.azS(a.h(0,"labelPosition")))},
 ew:function ew(a,b,c,d,e){var _=this
@@ -85475,9 +85476,7 @@ s=A.a3(s,s.$ti.i("aj.E"))
 return s},
 $S:541}
 A.abc.prototype={
-$1(a){var s=a.h(0,"id")
-a.h(0,"name")
-return new A.fj(s)},
+$1(a){return new A.fj(a.h(0,"id"),a.h(0,"name"))},
 $S:542}
 A.abf.prototype={
 $1(a){var s=J.hY(t.j.a(a),new A.abe(),t.vM)
@@ -86071,8 +86070,7 @@ s.at=null
 s.fy=B.cJ},
 $S:0}
 A.akx.prototype={
-$1(a){var s=a.a
-return A.ayo("Building "+s,s,t.S)},
+$1(a){return A.ayo(a.b,a.a,t.S)},
 $S:557}
 A.aky.prototype={
 $1(a){return this.XF(a)},
@@ -86100,7 +86098,7 @@ s.x=0
 s.w=this.b},
 $S:0}
 A.akz.prototype={
-$1(a){return A.ayo("Floor "+a.a,a,t.vM)},
+$1(a){return A.ayo(a.b,a,t.vM)},
 $S:559}
 A.akB.prototype={
 $1(a){var s=this.a
